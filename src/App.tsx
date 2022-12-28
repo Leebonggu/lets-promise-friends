@@ -4,9 +4,6 @@ import Button from './compoentns/Button';
 import { PromiseType } from './types';
 import { getPromiseCallByType } from './apis';
 
-
-
-
 function App() {
   const [promiseType, setPromiseType] = useState<PromiseType>('init')
   
@@ -19,7 +16,6 @@ function App() {
   useEffect(() => {
     if (promiseType !== 'init') {
       const t = fetchPromiseData(promiseType)
-      console.log(t);
       
       t.then(console.log);
     }
