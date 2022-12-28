@@ -7,7 +7,6 @@ import { getPromiseCallByType } from './apis';
 function App() {
   const [promiseType, setPromiseType] = useState<PromiseType>('init')
   
-
   const fetchPromiseData = async (t: PromiseType) => {
     const r = await getPromiseCallByType(t)
     return r
@@ -20,8 +19,6 @@ function App() {
       t.then(console.log);
     }
   }, [promiseType])
-
-  
 
   const onChangePromiseType = (value: PromiseType) => {
     setPromiseType(value)

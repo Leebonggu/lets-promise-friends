@@ -1,4 +1,3 @@
-import React from 'react'
 import { PromiseType } from '../types';
 
 interface Props {
