@@ -1,3 +1,7 @@
+# Promise Playground
+## 1.
+- any, race, all, settled
+
 # JS 비동기 처리 <span style="font-size: 10px">(with 김태곤)</span>
 
 ## Session 1.비동기 처리란?
